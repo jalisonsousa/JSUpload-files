@@ -8,7 +8,7 @@
       <link rel="stylesheet" type="text/css" href="css/view-files.css">
       <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
       <script src="https://cdn.jsdelivr.net/gh/jalisonsousa/RemoveBanner/removeBanner2.js"></script>
-      <title>Visualizar Arquivos</title>
+      <title>JSUpload Files - Arquivos</title>
    </head>
    <body>
       <main class="container">
