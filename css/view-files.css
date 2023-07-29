@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.files-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.arquivo {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.arquivo-nome {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.botao-download {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #32c141;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.botao-download:hover {
+  background-color: #299935;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4c33c8;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.back-button:hover {
+  background-color: #2f12bf;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+  border: none;
+}
