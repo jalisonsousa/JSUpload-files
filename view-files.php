@@ -7,7 +7,7 @@
       <link rel="icon" href="icon.png" type="image/icon type">
       <link rel="stylesheet" type="text/css" href="css/view-files.css">
       <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-      <script src="https://cdn.jsdelivr.net/gh/JalisonBRs/RemoveBanner/removeBanner2.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/jalisonsousa/RemoveBanner/removeBanner2.js"></script>
       <title>Visualizar Arquivos</title>
    </head>
    <body>
