@@ -9,7 +9,7 @@
       <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
       <script src="https://cdn.jsdelivr.net/gh/jalisonsousa/RemoveBanner/removeBanner2.js"></script>
-      <title>Apagar Arquivos</title>
+      <title>JSUpload Files - Apagar</title>
    </head>
    <body>
       <main class="container">
@@ -29,7 +29,7 @@
             ?>
          </div>
          <center>
-            <a class="back-button" href="index.html">Voltar</a>
+            <a class="back-button" href="\up">Voltar</a>
          </center>
          <div class="footer mt-5">
             <a href="https://github.com/JalisonBRs">
