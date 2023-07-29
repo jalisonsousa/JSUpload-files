@@ -4,6 +4,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta content="minimum-scale=0.8, width=device-width, maximum-scale=0, user-scalable=no" name="viewport">
+      <meta name="description" content=" Faça Upload de Imagens e PDFs para usar em pc e baixa arquivo no celular ou vice-versa, para uso pessoal. ">
       <link rel="icon" href="icon.png" type="image/icon type">
       <link rel="stylesheet" type="text/css" href="css/view-files.css">
       <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
@@ -28,12 +29,12 @@
             ?>   
          </div>
          <center>
-            <a class="back-button" href="index.html">Voltar</a>
+            <a class="back-button" href="\up">Voltar</a>
             <a href="view-delete-files.php" class="back-button">Apagar</a>
          </center>
          <div class="footer mt-5">
-            <a href="https://github.com/JalisonBRs">
-               <img src="https://cdn.discordapp.com/attachments/410233690212401162/1128038777533780060/1689008345978.png" alt="JalisonBR" class="footer-image">
+            <a href="https://github.com/jalisonsousa">
+               <img src="https://cdn.discordapp.com/attachments/410233690212401162/1128038777533780060/1689008345978.png" alt="JalisonSousa" class="footer-image">
             </a>
          </div>
       </main>
