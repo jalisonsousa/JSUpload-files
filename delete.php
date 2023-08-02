@@ -4,7 +4,7 @@ if (isset($_GET['arquivo'])) {
 
     $arquivo = $_GET['arquivo'];
 
-    $scandir = 'uploads/';
+    $scandir = 'arquivos/';
 
 
 

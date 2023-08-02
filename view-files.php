@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
    <head>
       <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta content="minimum-scale=0.8, width=device-width, maximum-scale=0, user-scalable=no" name="viewport">
       <meta name="description" content=" Faça Upload de Imagens e PDFs para usar em pc e baixa arquivo no celular ou vice-versa, para uso pessoal. ">
       <link rel="icon" href="icon.png" type="image/icon type">
       <link rel="stylesheet" type="text/css" href="css/view-files.css">
@@ -16,7 +16,7 @@
          <h1 class="mt-5">Visualizar Arquivos</h1>
          <div class="files-container row">
             <?php
-               $diretorio = 'uploads/';
+               $diretorio = 'arquivos/';
                $arquivos = scandir($diretorio);
                foreach ($arquivos as $arquivo) {
                   if ($arquivo !== '.' && $arquivo !== '..') {
@@ -29,7 +29,7 @@
             ?>   
          </div>
          <center>
-            <a class="back-button" href="\up">Voltar</a>
+            <a class="back-button" href="\siteFile">Voltar</a>
             <a href="view-delete-files.php" class="back-button">Apagar</a>
          </center>
          <div class="footer mt-5">

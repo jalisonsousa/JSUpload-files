@@ -4,7 +4,7 @@ if (isset($_GET['arquivo'])) {
   $arquivo = $_GET['arquivo'];
   
   // Caminho para a pasta de uploads
-  $caminhoArquivo = 'uploads/' . $arquivo;
+  $caminhoArquivo = 'arquivos/' . $arquivo;
 
   // Verifica se o arquivo existe
   if (file_exists($caminhoArquivo)) {
