@@ -29,7 +29,7 @@
             ?>   
          </div>
          <center>
-            <a class="back-button" href="\siteFile">Voltar</a>
+            <a class="back-button" href="index.html">Voltar</a>
             <a href="view-delete-files.php" class="back-button">Apagar</a>
          </center>
          <div class="footer mt-5">
