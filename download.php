@@ -1,10 +1,8 @@
 <?php
-
 if (isset($_GET['arquivo'])) {
   $arquivo = $_GET['arquivo'];
-  if($arquivo == ""){ echo "√ Você é malvado? kkk " . $_SERVER["REMOTE_ADDR"]; exit; ; }
-  
-  $caminhoArquivo = 'arquivos/' . $arquivo;
+  if($arquivo == ""){ echo " Oque voce esta fazendo aqui? kkk " . $_SERVER["REMOTE_ADDR"]; exit; ; }
+  $caminhoArquivo = 'uploads/' . $arquivo;
   $caminhoCheck = "../";
 
   if (strpos($caminhoArquivo, $caminhoCheck) === false) {
