@@ -1,10 +1,8 @@
 <?php
-    // SEGUNDA CORREÇÃO DO DIA. 19/08/2023
     if (isset($_GET['arquivo'])) {
         $arquivo = $_GET['arquivo'];
         if($arquivo == "") { echo "Sem nenhum resultado."; exit;}
-        
-        $caminhoA = 'arquivos/' . $arquivo;
+        $caminhoA = 'uploads/' . $arquivo;
         $caminhoB = "../";
 
         if(strpos($caminhoA, $caminhoB) === false){
@@ -28,9 +26,19 @@
         $message = 'Parâmetros inválidos.';
         $isSuccess = false;
     }
-
-// Redirecionar de volta para a página delete-files.php com mensagem de sucesso/erro
-
-    header("Location: view-delete-files.php?success=$isSuccess&message=" . urlencode($message));
-    exit();
+// Exibir notificação usando SweetAlert
+echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+echo "<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        Swal.fire({
+            icon: '" . ($isSuccess ? 'success' : 'error') . "',
+            title: 'Aviso',
+            text: '" . addslashes($message) . "',
+            showConfirmButton: false,
+            timer: 1500
+        }).then(() => {
+            window.location.href = 'view-delete-files.php';
+        });
+    });
+</script>";
 ?>
