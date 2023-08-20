@@ -16,17 +16,19 @@
          <h1 class="mt-5">Visualizar Arquivos</h1>
          <div class="files-container row">
             <?php
-               $diretorio = 'arquivos/';
+               $diretorio = 'uploads/';
+               $allowedExtensions = ['jpeg', 'jpg', 'png', 'pdf'];
                $arquivos = scandir($diretorio);
                foreach ($arquivos as $arquivo) {
-                  if ($arquivo !== '.' && $arquivo !== '..') {
+                  $extensao = pathinfo($arquivo, PATHINFO_EXTENSION);
+                  if ($arquivo !== '.' && $arquivo !== '..' && $arquivo !== '.htaccess' && in_array($extensao, $allowedExtensions)) {
                      echo '<div class="arquivo col-md-4">';
                      echo '<div class="arquivo-nome">' . $arquivo . '</div>';
-                     echo '<a class="botao-download" href="download.php?arquivo=' . $arquivo . '">Download</a>';
+                     echo '<a class="botao-download" href="download.php?arquivo=' . urlencode($arquivo) . '">Download</a>';
                      echo '</div>';
                   }
                }
-            ?>   
+            ?>    
          </div>
          <center>
             <a class="back-button" href="index.html">Voltar</a>

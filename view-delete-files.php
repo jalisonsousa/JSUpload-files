@@ -17,10 +17,12 @@
          <h1 class="mt-5">Apagar Arquivos</h1>
          <div class="files-container row">
              <?php
-            $diretorio = 'arquivos/';
+            $diretorio = 'uploads/';
             $arquivos = scandir($diretorio);
+            $allowedExtensions = ['jpeg', 'jpg', 'png', 'pdf'];
             foreach ($arquivos as $arquivo) {
-                if ($arquivo !== '.' && $arquivo !== '..') {
+                $extension = pathinfo($arquivo, PATHINFO_EXTENSION);
+                if ($arquivo !== '.' && $arquivo !== '..' && $arquivo !== '.htaccess' && in_array($extension, $allowedExtensions)) {
                     echo '<div class="arquivo col-md-4">';
                     echo '<div class="arquivo-nome">' . $arquivo . '</div>';
                     echo '<a class="delete-button" href="delete.php?arquivo=' . urlencode($arquivo) . '">Apagar</a>';
