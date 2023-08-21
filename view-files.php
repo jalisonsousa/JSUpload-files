@@ -7,7 +7,7 @@
       <meta name="description" content=" Faça Upload de Imagens e PDFs para usar em pc e baixa arquivo no celular ou vice-versa, para uso pessoal. ">
       <link rel="icon" href="icon.png" type="image/icon type">
       <link rel="stylesheet" type="text/css" href="css/view-files.css">
-      <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
       <script src="https://cdn.jsdelivr.net/gh/jalisonsousa/RemoveBanner/removeBanner2.js"></script>
       <title>JSUpload Files - Arquivos</title>
    </head>
