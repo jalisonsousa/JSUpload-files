@@ -15,7 +15,7 @@
 <body>
   <h1 class="mt-5">Upload de Imagens e PDFs</h1>
   <form id="upload-form" enctype="multipart/form-data" class="mb-3">
-    <input type="file" name="file" id="file-input" accept="image/*, .pdf" onchange="showFileName()" class="d-none">
+    <input type="file" name="file" id="file-input" accept="image/*, application/pdf" onchange="showFileName()" class="d-none">
     <label for="file-input" id="file-label" class="btn btn-success">Selecionar Arquivo</label>
     <button type="submit" id="upload-button" class="btn btn-primary" disabled="disabled">Enviar</button>
   </form>
