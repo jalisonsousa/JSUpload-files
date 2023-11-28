@@ -8,8 +8,8 @@
       <link rel="icon" href="icon.png" type="image/icon type">
       <link rel="stylesheet" type="text/css" href="css/view-files.css">
       <link rel="stylesheet" href="css/bootstrap.min.css">
-      <script src="https://cdn.jsdelivr.net/gh/jalisonsousa/RemoveBanner/removeBanner2.js"></script>
-      <title>JSUpload Files - Arquivos</title>
+      <script src="https://cdn.jsdelivr.net/gh/jalisonsousa/RemoveBanner/removebanner.js"></script>
+      <title>Arquivos - JSUpload Files</title>
    </head>
    <body>
       <main class="container">
@@ -17,7 +17,7 @@
          <div class="files-container row">
             <?php
                $diretorio = 'uploads/';
-               $allowedExtensions = ['jpeg', 'jpg', 'png', 'pdf'];
+               $allowedExtensions = ['jpeg', 'jpg', 'png', 'pdf', 'docx', 'xlsx'];
                $arquivos = scandir($diretorio);
                foreach ($arquivos as $arquivo) {
                   $extensao = pathinfo($arquivo, PATHINFO_EXTENSION);
@@ -31,8 +31,8 @@
             ?>    
          </div>
          <center>
-            <a class="back-button" href="index.html">Voltar</a>
-            <a href="view-delete-files.php" class="back-button">Apagar</a>
+            <a class="back-button" href="index.php">Voltar</a>
+            <a href="view-delete.php" class="back-button">Apagar</a>
          </center>
          <div class="footer mt-5">
             <a href="https://github.com/jalisonsousa">
