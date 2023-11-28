@@ -37,7 +37,7 @@ echo "<script>
             showConfirmButton: false,
             timer: 1500
         }).then(() => {
-            window.location.href = 'view-delete-files.php';
+            window.location.href = 'view-delete.php';
         });
     });
 </script>";
